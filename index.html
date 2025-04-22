@@ -29,9 +29,9 @@
   </body>
   <script>
     fetch("words.txt")
-    .then((res) => res.wordList())
-    .then((wordList) => {
-      const words = wordList.split('\n')
+    .then((res) => res.text())
+    .then((text) => {
+      const words = text.split('\n')
      })
     .catch((e) => console.error(e));
     function random() {
