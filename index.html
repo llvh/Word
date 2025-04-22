@@ -32,7 +32,7 @@
       .then(r=>r.text())
       .then(text => {
         words = text.split("\n")
-      }
+      })
     function random() {
       word = document.getElementById("word")
       word.innerHTML = words[Math.floor(Math.random() * array.length)];
