@@ -28,7 +28,7 @@
     <button class="random" onclick="random()">Generate</button>
   </body>
   <script>
-    import wordList from 'https://www.mit.edu/~ecprice/wordlist.10000';
+    import wordList from './words.txt';
     const words = wordList.split('\n')
     function random() {
       word = document.getElementById("word")
