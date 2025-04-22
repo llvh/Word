@@ -28,9 +28,11 @@
     <button class="random" onclick="random()">Generate</button>
   </body>
   <script>
+    import wordList from 'https://www.mit.edu/~ecprice/wordlist.10000';
+    const words = wordList.split('\n')
     function random() {
       word = document.getElementById("word")
-      word.innerHTML = "testing"
+      word.innerHTML = words[Math.floor(Math.random() * array.length)];
     }
   </script>
 </html>
