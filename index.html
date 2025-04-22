@@ -28,8 +28,12 @@
     <button class="random" onclick="random()">Generate</button>
   </body>
   <script>
-    import wordList from './words.txt';
-    const words = wordList.split('\n')
+    fetch("words.txt")
+    .then((res) => res.wordList())
+    .then((wordList) => {
+      const words = wordList.split('\n')
+     })
+    .catch((e) => console.error(e));
     function random() {
       word = document.getElementById("word")
       word.innerHTML = words[Math.floor(Math.random() * array.length)];
