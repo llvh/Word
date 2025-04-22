@@ -30,13 +30,10 @@
   <script>
     fetch("words.txt")
     .then((res) => res.text())
-    .then((text) => {
-      const words = text.split('\n')
-      function random() {
-          word = document.getElementById("word")
-          word.innerHTML = words[Math.floor(Math.random() * array.length)];
-      }
-    })
-    .catch((e) => console.error(e));
+    const words = text.split('\n')
+    function random() {
+      word = document.getElementById("word")
+      word.innerHTML = words[Math.floor(Math.random() * array.length)];
+    }
   </script>
 </html>
