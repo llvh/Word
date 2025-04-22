@@ -11,11 +11,19 @@
       h1.word {
         font-size: 10vw;
       }
+      button.random {
+        font-size: 5vw;
+        width: 5vw;
+        color: white;
+        background: black;
+        outline: none;
+        border: 0;
+      }
     </style>
   </head>
   <body>
     <h1 class="word" id="word">Word</h1>
-    <button onclick="random()">Generate</button>
+    <button class="random" onclick="random()">Generate</button>
   </body>
   <script>
     function random() {
