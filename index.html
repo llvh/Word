@@ -28,7 +28,7 @@
     <button class="random" onclick="random()">Generate</button>
   </body>
   <script>
-    fetch("myfile.txt")
+    fetch("words.txt")
       .then(r=>r.text())
       .then(text => {
         words = text.split("\n")
