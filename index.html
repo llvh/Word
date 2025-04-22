@@ -1,10 +1,22 @@
 <html>
   <head>
     <title>Random Word Generator</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <h1 id="word">Word</h1>
     <button onclick="random()">Generate</button>
   </body>
-  <script src="script.js"></script>
+  <script>
+    function random() {
+      word = document.getElementById("word")
+      word.innerHTML = "testing"
+    }
+  </script>
 </html>
